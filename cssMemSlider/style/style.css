@@ -55,9 +55,9 @@ body {
   background: rgb(47, 120, 10);;
 }
 .bulletWrap {
-width: 240px;
-height: 40px;
-margin-top: 100px;
+width: 15rem;
+height: 2.8rem;
+margin-top: 6.6rem;
 display: flex;
 align-self: flex-end;
 align-items: center;
@@ -65,25 +65,28 @@ align-items: center;
   cursor: pointer;
 }
 .bulletLabel {
-    width: 60px;
-    height: 40px;
+    width: 25%;
+    height: 2.8rem;
     display: flex;
 justify-content: center;
 align-items: center;
   cursor: pointer;
 }
 .bullet {
-  width: 12px;
-  height: 12px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
       border: 1px solid white;
   background: rgb(47, 120, 10);
     transition: 1s;
 }
 label:hover .bullet {
-  border: 4px solid rgba(47, 120, 10, 0.5);
+  border: 3px solid white;
   background: rgba(159, 236, 120, 0.5);
   transition: 1s;
+}
+label:active .bullet {
+  background: white;
 }
 
 #bullet01:checked ~.sliderWrap > .imgWrap > #img01,
@@ -107,7 +110,7 @@ label:hover .bullet {
 #bullet03:checked ~.bulletWrap > #label03 > div,
 #bullet04:checked ~.bulletWrap > #label04 > div
  {
- background: rgba(159, 236, 120, 0.5);
+ background: rgb(11, 31, 1);
 }
 #bullet01:checked ~.sliderWrap > .imgWrap > #img01,
 #bullet02:checked ~.sliderWrap > .imgWrap > #img02,
