@@ -75,16 +75,18 @@ align-items: center;
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-      border: 1px solid white;
+      border: 0.06rem solid white;
   background: rgb(47, 120, 10);
-
+transition: 0.5s;
 }
 label:hover .bullet {
   transform: scale(130%);
   background: rgba(159, 236, 120, 0.5);
+  transition: 0.5s;
 }
 label:active .bullet {
   background: white;
+
 }
 
 #bullet01:checked ~.sliderWrap > .imgWrap > #img01,
@@ -105,6 +107,7 @@ label:active .bullet {
 #bullet04:checked ~.bulletWrap > #label04 > div
  {
  background: rgb(11, 31, 1);
+ transition: 0.5s;
 }
 #bullet01:checked ~.sliderWrap > .imgWrap > #img01,
 #bullet02:checked ~.sliderWrap > .imgWrap > #img02,
