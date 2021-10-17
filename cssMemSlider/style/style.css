@@ -41,8 +41,9 @@ body {
   transition: 2s;
 }
 .text {
-  width: 100%;
+  margin-top: -2rem;
   height: 1.5em;
+  width: 19rem;
   position: relative;
   overflow: hidden;
 }
@@ -165,6 +166,9 @@ align-self: center;
 }
 .imgWrap {
   height: 40vw; 
+}
+.text {
+  margin-top: 0;
 }
 }
 @media (max-width: 660px) {
