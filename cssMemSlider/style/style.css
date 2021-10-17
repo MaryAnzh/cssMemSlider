@@ -40,6 +40,7 @@ body {
   position: absolute;
   z-index: 0;
   opacity: 0;
+  transition: 2s;
 }
 .text {
   width: 100%;
@@ -120,7 +121,7 @@ label:hover .bullet {
 }
 @keyframes slideinImg {
   from {
-    width: 50%;
+    width: 0%;
   }
 
   to {
