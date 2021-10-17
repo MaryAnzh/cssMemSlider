@@ -1,0 +1,184 @@
+body {
+    background: black;
+    display: flex;
+    padding: 3%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.wrap {
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+    width: calc(100% - 6%);
+    height: 50vw;
+       border-radius: 2%;
+    background: rgb(47, 120, 10);
+}
+.wrap input {
+  display: none;
+}
+.sliderWrap { 
+    width: 100%;
+}
+.imgWrap {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+   border-radius: 2%;
+
+}
+.imgWrap img {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+     border-radius: 2%;
+  transition: 2s;
+}
+.text {
+  margin-top: -2rem;
+  height: 1.5rem;
+  width: 19rem;
+  position: relative;
+  overflow: hidden;
+}
+.text p {
+  color: white;
+  font-size: 1.5em;
+  margin-left: 2%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  
+}
+.bulletWrap {
+width: 15rem;
+height: 2.8rem;
+margin-top: 2rem;
+display: flex;
+align-self: flex-end;
+align-items: center;
+position: relative;
+  cursor: pointer;
+}
+.bulletLabel {
+    width: 25%;
+    height: 2.8rem;
+    display: flex;
+justify-content: center;
+align-items: center;
+  cursor: pointer;
+}
+.bullet {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+      border: 0.06rem solid white;
+  background: rgb(47, 120, 10);
+transition: 0.5s;
+}
+label:hover .bullet {
+  transform: scale(130%);
+  background: rgba(159, 236, 120, 0.5);
+  transition: 0.5s;
+}
+label:active .bullet {
+  background: white;
+
+}
+
+#bullet01:checked ~.sliderWrap > .imgWrap > #img01,
+#bullet01:checked ~.text > #text01,
+#bullet02:checked ~.sliderWrap > .imgWrap > #img02,
+#bullet02:checked ~.text > #text02,
+#bullet03:checked ~.sliderWrap > .imgWrap > #img03,
+#bullet03:checked ~.text > #text03,
+#bullet04:checked ~.sliderWrap > .imgWrap > #img04,
+#bullet04:checked ~.text > #text04
+ {
+	opacity: 1;
+	z-index: 1;
+}
+#bullet01:checked ~.bulletWrap > #label01 > div,
+#bullet02:checked ~.bulletWrap > #label02 > div,
+#bullet03:checked ~.bulletWrap > #label03 > div,
+#bullet04:checked ~.bulletWrap > #label04 > div
+ {
+ background: rgb(11, 31, 1);
+ transition: 0.5s;
+}
+#bullet01:checked ~.sliderWrap > .imgWrap > #img01,
+#bullet02:checked ~.sliderWrap > .imgWrap > #img02,
+#bullet03:checked ~.sliderWrap > .imgWrap > #img03,
+#bullet04:checked ~.sliderWrap > .imgWrap > #img04 {
+  animation-duration: 2s;
+  animation-name: slideinImg;
+}
+@keyframes slideinImg {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+#bullet01:checked ~.text > #text01,
+#bullet02:checked ~.text > #text02,
+#bullet03:checked ~.text > #text03,
+#bullet04:checked ~.text > #text04
+ {
+  animation-duration: 1s;
+  animation-name: slidein;
+ }
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 2%;
+  }
+}
+
+
+@media (max-width: 1320px) {
+  .wrap {
+    height: 60vw;
+}
+
+}
+
+@media (max-width: 920px) {
+  .bulletWrap {
+align-self: center;
+}
+.wrap {
+    height: 64vw;
+}
+.imgWrap {
+  height: 40vw; 
+}
+.text {
+  margin-top: 0;
+}
+}
+@media (max-width: 660px) {
+  .wrap {
+    height: 64vw;
+}
+}
+@media (max-width: 660px) {
+  .wrap {
+    height: 75vw;
+}
+}
