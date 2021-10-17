@@ -2,7 +2,9 @@ body {
     background: black;
     display: flex;
     padding: 3%;
+    height: 100%;
     justify-content: center;
+    align-items: center;
 }
 .wrap {
      position: relative;
@@ -90,13 +92,13 @@ label:active .bullet {
 }
 
 #bullet01:checked ~.sliderWrap > .imgWrap > #img01,
-#bullet01:checked ~.sliderWrap > .text > #text01,
+#bullet01:checked ~.text > #text01,
 #bullet02:checked ~.sliderWrap > .imgWrap > #img02,
-#bullet02:checked ~.sliderWrap > .text > #text02,
+#bullet02:checked ~.text > #text02,
 #bullet03:checked ~.sliderWrap > .imgWrap > #img03,
-#bullet03:checked ~.sliderWrap > .text > #text03,
+#bullet03:checked ~.text > #text03,
 #bullet04:checked ~.sliderWrap > .imgWrap > #img04,
-#bullet04:checked ~.sliderWrap > .text > #text04
+#bullet04:checked ~.text > #text04
  {
 	opacity: 1;
 	z-index: 1;
@@ -128,10 +130,10 @@ label:active .bullet {
   }
 }
 
-#bullet01:checked ~.sliderWrap > .text > #text01,
-#bullet02:checked ~.sliderWrap > .text > #text02,
-#bullet03:checked ~.sliderWrap > .text > #text03,
-#bullet04:checked ~.sliderWrap > .text > #text04
+#bullet01:checked ~.text > #text01,
+#bullet02:checked ~.text > #text02,
+#bullet03:checked ~.text > #text03,
+#bullet04:checked ~.text > #text04
  {
   animation-duration: 1s;
   animation-name: slidein;
