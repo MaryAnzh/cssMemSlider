@@ -56,11 +56,11 @@ body {
 .bulletWrap {
 width: 15rem;
 height: 2.8rem;
-margin-top: 6.6rem;
+margin-top: 2rem;
 display: flex;
 align-self: flex-end;
 align-items: center;
-  position: relative;
+position: relative;
   cursor: pointer;
 }
 .bulletLabel {
@@ -167,11 +167,11 @@ align-self: center;
 }
 @media (max-width: 660px) {
   .wrap {
-    height: 95vw;
+    height: 64vw;
 }
 }
 @media (max-width: 660px) {
   .wrap {
-    height: 95vw;
+    height: 75vw;
 }
 }
